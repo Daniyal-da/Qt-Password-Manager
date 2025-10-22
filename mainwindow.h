@@ -2,7 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QListWidgetItem>   // ← این خط اضافه شود
+#include <QListWidgetItem>
+#include <QMessageBox>
+#include <QMap>
+#include <QPair>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QFile>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -13,25 +20,21 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void addUser();
-    void updateUser();
-    void deleteUser();
-    void onSelectionChanged();
-    void onItemDoubleClicked(QListWidgetItem *item);   // ← این خط اضافه شود
-
-protected:
-    void closeEvent(QCloseEvent *event) override;
+    void addEntry();
+    void deleteSelected();
+    void updateSelected();
+    void showDetails(QListWidgetItem *item);
 
 private:
-    void loadData();
-    void saveData() const;
-    QString dataFilePath() const;
-
     Ui::MainWindow *ui;
+    QMap<QString, QPair<QString, QString>> dataMap;
+
+    void saveData();   // ذخیره در JSON
+    void loadData();   // لود از JSON
 };
 
 #endif // MAINWINDOW_H
