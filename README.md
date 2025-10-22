@@ -1,7 +1,7 @@
 # Qt-Password-Manager
 # 🔐 Qt Password Manager
 
-A simple password manager built with **C++ and Qt 5**, designed to securely store, edit, and view your saved passwords.  
+A simple password manager built with **C++ and Qt 6**, designed to securely store, edit, and view your saved passwords.  
 All data (usernames and passwords) are saved locally in a **JSON file** for easy access.  
 It provides a clean and user-friendly interface built with Qt Widgets.
 
@@ -19,7 +19,7 @@ It provides a clean and user-friendly interface built with Qt Widgets.
 
 ## 🧰 Tech Stack
 - **Language:** C++  
-- **Framework:** Qt 5 / Qt Creator  
+- **Framework:** Qt 6 / Qt Creator  
 - **Data Storage:** JSON (QJsonDocument / QFile)  
 
 ---
