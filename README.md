@@ -19,7 +19,7 @@ It provides a clean and user-friendly interface built with Qt Widgets.
 
 ## 🖼 Preview
 
-![App Screenshot](images/screenshot1.png)
+![App Screenshot](screenshot1.png)
 
 ---
 
