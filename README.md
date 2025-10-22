@@ -17,6 +17,12 @@ It provides a clean and user-friendly interface built with Qt Widgets.
 
 ---
 
+## 🖼 Preview
+
+![App Screenshot](images/screenshot1.png)
+
+---
+
 ## 🧰 Tech Stack
 - **Language:** C++  
 - **Framework:** Qt 6 / Qt Creator  
